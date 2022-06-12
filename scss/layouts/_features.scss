@@ -1,0 +1,27 @@
+.features__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .features__icon-holder {
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-cl-grey);
+    border-radius: 4px;
+  
+    margin-bottom: 30px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .features__text {
+    width: 270px;
+
+        &:not(:last-child) {
+        margin-right: 30px;
+        }
+  }
+  
+  
