@@ -22,6 +22,7 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
+
   }
 
   .hero-btn,
@@ -125,5 +126,43 @@
       margin-left: 10px;
     }
   
+    .menu-button {
+      display: inline-flex;
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      right: 15px;
+      top: 10px;
+      position: absolute;
+      z-index: 100;
+      transition-property: fill;
+    transition-duration: var(--fast-animation);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      
+
+      & .icon-mobile-menu-close {
+        display: none;
+      }
+
+      &.is-open .icon-mobile-menu-close {
+        display: block;
+      }
+
+      &.is-open .icon-burger-menu {
+        display: none;
+      }
+
+      &:hover {
+        fill: var(--btn-cl-accent);
+      }
+
+      &:focus {
+        fill: var(--btn-cl-accent);
+      }
+
+      @include mq(tablet) {
+        display: none;
+      }
+    }
   
   

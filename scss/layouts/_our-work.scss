@@ -1,5 +1,15 @@
 .our-work__section {
+  @include mq(mobile-only) {
+    display: none;
+  }
+
+  @include mq(tablet-only) {
+    display: none;
+  }
+
     padding-top: 0;
+
+    
   }
   
   .our-work__list {

@@ -1,11 +1,35 @@
 .footer-form-container {
     margin-left: auto;
     margin-right: 0;
+    
+    @include mq(mobile-only) {
+      display: flex;
+      flex-direction: column;
+      }
+      
+    @include mq(tablet-only) {
+      margin-left: 0;
+    }
   }
   
   .footer-form {
     display: flex;
-    width: 570px;
+    
+  
+
+    @include mq(mobile-only) {
+      flex-direction: column;
+      align-items: center;
+    }
+   
+    @include mq(tablet) {
+      width: 570px;
+    }
+
+    @include mq(tablet-only) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   
   .footer-email {
@@ -24,6 +48,17 @@
          &:focus {
         border-color: var(--btn-cl-accent);
         }
+
+        @include mq(mobile-only) {
+          width: 450px;
+        }
+
+        @include mq(tablet-only) {
+          margin-bottom: 20px;
+          width: 450px;
+        }
+
+        
   
   }
   
@@ -31,8 +66,18 @@
   .footer-mail-group {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    margin-right: 12px;
+    
+    @include mq(mobile-only) {
+      margin-bottom: 20px;
+    }
+
+    @include mq(desktop) {
+      justify-content: flex-end;
+      margin-right: 12px;
+    }
+
+    
+
   }
   
   .footer-mail-btn {
@@ -50,4 +95,13 @@
   
     color: var(--btn-cl-txt);
     margin-bottom: 20px;
+
+    @include mq(mobile-only) {
+      display: block;
+      text-align: center;
+    }
+
+    @include mq(tablet-only) {
+      text-align: center;
+    }
   }

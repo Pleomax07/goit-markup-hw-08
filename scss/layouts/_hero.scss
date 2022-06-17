@@ -1,32 +1,63 @@
 .hero {
-    background-image: url(../images/background-images/background-hero-blackout.png),
-      url(../images/background-images/background-hero.jpg);
-    max-width: 1600px;
-    background-color: var(--background-cl-dark);
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  background-image: url(../images/background-images/background-hero-blackout_sm.png),
+    url(../images/background-images/background-hero_sm.jpg);
+
+    @include mq(retina) {
+      background-image: url(../images/background-images/background-hero-blackout_sm@2x.png),
+    url(../images/background-images/background-hero_sm@2x.jpg);
+    }
+
+    @include mq(tablet-only) {
+      background-image: url(../images/background-images/background-hero-blackout_md.png),
+      url(../images/background-images/background-hero_md.jpg);
+
+      @include mq(retina) {
+        background-image: url(../images/background-images/background-hero-blackout_md@2x.png),
+      url(../images/background-images/background-hero_md@2x.jpg);
+      }
   
+    } 
+     @include mq(desktop) {
+      background-image: url(../images/background-images/background-hero-blackout_lg.png),
+      url(../images/background-images/background-hero_lg.jpg);
+
+      @include mq(retina) {
+        background-image: url(../images/background-images/background-hero-blackout_lg@2x.png),
+      url(../images/background-images/background-hero_lg@2x.jpg);
+      }
   
-  .hero .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    }
+  max-width: 1600px;
+  background-color: var(--background-cl-dark);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+
+  @include mq(mobile-only) {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
   }
-  
-  .hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 30px;
-  }
+}
