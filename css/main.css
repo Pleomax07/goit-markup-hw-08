@@ -694,7 +694,7 @@ ul {
 
 .footer-form-container {
   margin-left: auto;
-  margin-right: 0;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -751,40 +751,6 @@ ul {
   }
 }
 
-.footer-email {
-  padding: 15px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-  -webkit-transition-property: border;
-  transition-property: border;
-  -webkit-transition-duration: var(--fast-animation);
-          transition-duration: var(--fast-animation);
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: 358px;
-  outline: transparent;
-}
-
-.footer-email:hover, .footer-email:focus {
-  border-color: var(--btn-cl-accent);
-}
-
-@media screen and (max-width: 767.98px) {
-  .footer-email {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .footer-email {
-    margin-bottom: 20px;
-    width: 450px;
-  }
-}
-
 .footer-mail-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -798,6 +764,7 @@ ul {
 @media screen and (max-width: 767.98px) {
   .footer-mail-group {
     margin-bottom: 20px;
+    position: relative;
   }
 }
 
@@ -807,6 +774,39 @@ ul {
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin-right: 12px;
+  }
+}
+
+.footer-email {
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -webkit-transition-duration: var(--fast-animation);
+          transition-duration: var(--fast-animation);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 450px;
+  outline: transparent;
+}
+
+.footer-email:hover, .footer-email:focus {
+  border-color: var(--btn-cl-accent);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer-email {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-email {
+    width: 358px;
   }
 }
 
@@ -1200,16 +1200,16 @@ ul {
 }
 
 .hero {
-  background-image: url(../images/background-images/background-hero-blackout_sm.png), url(../images/background-images/background-hero_sm.jpg);
   max-width: 1600px;
   background-color: var(--background-cl-dark);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url(../images/background-images/background-hero-blackout_sm.png), url(../images/background-images/background-hero_sm.jpg);
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1232,6 +1232,8 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: url(../images/background-images/background-hero-blackout_lg.png), url(../images/background-images/background-hero_lg.jpg);
   }
 }
@@ -1272,6 +1274,13 @@ ul {
 @media screen and (max-width: 767.98px) {
   .hero-title {
     width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .hero-title {
     font-size: 26px;
     line-height: 1.62;
   }

@@ -1,41 +1,42 @@
 .hero {
-  background-image: url(../images/background-images/background-hero-blackout_sm.png),
-    url(../images/background-images/background-hero_sm.jpg);
-
-    @include mq(retina) {
-      background-image: url(../images/background-images/background-hero-blackout_sm@2x.png),
-    url(../images/background-images/background-hero_sm@2x.jpg);
-    }
-
-    @include mq(tablet-only) {
-      background-image: url(../images/background-images/background-hero-blackout_md.png),
-      url(../images/background-images/background-hero_md.jpg);
-
-      @include mq(retina) {
-        background-image: url(../images/background-images/background-hero-blackout_md@2x.png),
-      url(../images/background-images/background-hero_md@2x.jpg);
-      }
-  
-    } 
-     @include mq(desktop) {
-      background-image: url(../images/background-images/background-hero-blackout_lg.png),
-      url(../images/background-images/background-hero_lg.jpg);
-
-      @include mq(retina) {
-        background-image: url(../images/background-images/background-hero-blackout_lg@2x.png),
-      url(../images/background-images/background-hero_lg@2x.jpg);
-      }
-  
-    }
   max-width: 1600px;
   background-color: var(--background-cl-dark);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
+
+  background-image: url(../images/background-images/background-hero-blackout_sm.png),
+    url(../images/background-images/background-hero_sm.jpg);
+
+  @include mq(retina) {
+    background-image: url(../images/background-images/background-hero-blackout_sm@2x.png),
+      url(../images/background-images/background-hero_sm@2x.jpg);
+  }
+
+  @include mq(tablet-only) {
+    background-image: url(../images/background-images/background-hero-blackout_md.png),
+      url(../images/background-images/background-hero_md.jpg);
+
+    @include mq(retina) {
+      background-image: url(../images/background-images/background-hero-blackout_md@2x.png),
+        url(../images/background-images/background-hero_md@2x.jpg);
+    }
+  }
+  @include mq(desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url(../images/background-images/background-hero-blackout_lg.png),
+      url(../images/background-images/background-hero_lg.jpg);
+
+    @include mq(retina) {
+      background-image: url(../images/background-images/background-hero-blackout_lg@2x.png),
+        url(../images/background-images/background-hero_lg@2x.jpg);
+    }
+  }
 }
 
 .hero .container {
@@ -57,6 +58,11 @@
 
   @include mq(mobile-only) {
     width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @include mq(tablet-only) {
     font-size: 26px;
     line-height: 1.62;
   }
