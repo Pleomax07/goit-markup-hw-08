@@ -1,4 +1,4 @@
-.our-work__section {
+.section__hidden {
   @include mq(mobile-only) {
     display: none;
   }
@@ -12,7 +12,7 @@
     
   }
   
-  .our-work__list {
+  .our-work {
     display: flex;
   }
   

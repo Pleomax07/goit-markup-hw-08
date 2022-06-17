@@ -4,7 +4,7 @@
   margin-bottom: 50px;
 }
 
-.portfolio .site-nav {
+.site-nav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@
   }
 }
 
-.portfolio .portfolio-item {
+.portfolio-item {
   margin-right: 8px;
 
   @include mq(mobile-only) {

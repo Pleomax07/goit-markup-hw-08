@@ -1,4 +1,8 @@
-.team__card {
+.section__another-bg {
+  background-color: var(--background-cl-grey);
+}
+
+.team {
   @include mq(tablet-only) {
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +54,7 @@
     padding-bottom: 30px;
   }
   
-  .team__name {
+  .team__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -63,7 +67,7 @@
     margin-bottom: 10px;
   }
   
-  .team__speciality {
+  .team__txt {
     font-size: 16px;
     line-height: 1.19;
   
@@ -72,7 +76,5 @@
     margin-bottom: 16px;
   }
   
-  .team {
-    background-color: var(--background-cl-grey);
-  }
+  
   
