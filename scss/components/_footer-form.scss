@@ -1,6 +1,6 @@
 .footer-form-container {
   margin-left: auto;
-  margin-right: auto;
+  
 
   @include mq(mobile-only) {
     display: flex;
@@ -37,7 +37,7 @@
 
   @include mq(mobile-only) {
     margin-bottom: 20px;
-    position: relative;
+    
   }
 
   @include mq(desktop) {
