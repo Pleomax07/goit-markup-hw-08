@@ -6,11 +6,13 @@
 }
 
 .clients__item {
-  width: 210px;
-  height: 92px;
-
+  @include mq(mobile-only) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  
+  
   @include mq(tablet-only) {
-    width: 226px;
+    flex-basis: calc((100% - 60px) / 3);
   }
 
   @include mq(desktop) {
