@@ -554,6 +554,7 @@ ul {
   line-height: 1.16;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
+  text-align: start;
 }
 
 .form-input-group {
