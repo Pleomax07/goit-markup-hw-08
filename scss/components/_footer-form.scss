@@ -2,17 +2,9 @@
   @include mq(desktop) {
     margin-left: auto;
   }
-  
-
-  @include mq(mobile-only) {
-    // display: flex;
-    // flex-direction: column;
-  }
 
   @include mq(tablet) {
-    // margin-left: 0;
-   
-  
+    margin-top: 60px;
   }
 }
 
@@ -22,7 +14,6 @@
   }
 
   @include mq(tablet) {
-    
   }
 
   @include mq(tablet-only) {
@@ -32,10 +23,8 @@
 }
 
 .footer-mail-group {
-  
   display: flex;
   flex-direction: column;
-  
 
   @include mq(mobile-only) {
     margin-bottom: 20px;

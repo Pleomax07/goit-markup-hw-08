@@ -12,6 +12,8 @@
 .menu-container {
   @include mq(tablet) {
     display: flex;
+    align-items: center;
+    width: 100%;
   }
 
   @include mq(mobile-only) {
@@ -105,16 +107,17 @@
 }
 
 .header-contacts-group {
-  position: absolute;
+  
 
   @include mq(tablet) {
-    right: 15px;
+    margin-left: auto;
   }
   @include mq(tablet-only) {
-    top: 21px;
+  
   }
 
   @include mq(mobile-only) {
+    position: absolute;
     bottom: 48px;
     margin-left: 40px;
   }
@@ -126,7 +129,6 @@
     flex-direction: column;
 
     & .header-mail {
-      margin-bottom: 10px;
       padding: 0;
       font-weight: 500;
       font-size: 12px;
@@ -170,6 +172,10 @@
 .contacts-list:not(:last-child) {
   @include mq(desktop) {
     margin-right: 30px;
+  }
+  
+  @include mq(tablet-only) {
+    margin-bottom: 10px;
   }
 }
 

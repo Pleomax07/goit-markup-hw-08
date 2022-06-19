@@ -10,34 +10,63 @@
   background-repeat: no-repeat;
 
   background-image: url(../images/background-images/background-hero-blackout_sm.png),
-    url(../images/background-images/background-hero_sm.png);
+    url(../images/background-images/background-hero_sm.jpg);
 
+    background-image: -webkit-image-set(url(../images/background-images/background-hero-blackout_sm.webp) 1x),
+    -webkit-image-set(url(../images/background-images/background-hero_sm.webp) 1x);
+
+  // Завантаження ретінізованого 2х фонового зображення
   @include mq(retina) {
     background-image: url(../images/background-images/background-hero-blackout_sm@2x.png),
-      url(../images/background-images/background-hero_sm@2x.png);
+      url(../images/background-images/background-hero_sm@2x.jpg);
+  
+      background-image: -webkit-image-set(url(../images/background-images/background-hero-blackout_sm@2x.webp) 1x),
+      -webkit-image-set(url(../images/background-images/background-hero_sm@2x.webp) 1x);
   }
 
-  @include mq(tablet-only) {
+    // |============================
+    // | Завантаження звичайного фонового зображення для планшету
+    // |============================
+  @include mq(tablet) {
     background-image: url(../images/background-images/background-hero-blackout_md.png),
-      url(../images/background-images/background-hero_md.png);
+    url(../images/background-images/background-hero_md.jpg);
 
+    background-image: -webkit-image-set(url(../images/background-images/background-hero-blackout_md.webp) 1x),
+    -webkit-image-set(url(../images/background-images/background-hero_md.webp) 1x);
+
+    // Завантаження ретінізованого 2х фонового зображення
     @include mq(retina) {
       background-image: url(../images/background-images/background-hero-blackout_md@2x.png),
-        url(../images/background-images/background-hero_md@2x.png);
+      url(../images/background-images/background-hero_md@2x.jpg);
+  
+      background-image: -webkit-image-set(url(../images/background-images/background-hero-blackout_md@2x.webp) 1x),
+      -webkit-image-set(url(../images/background-images/background-hero_md@2x.webp) 1x);
     }
   }
-  @include mq(desktop) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: url(../images/background-images/background-hero-blackout_lg.png),
-      url(../images/background-images/background-hero_lg.png);
 
+    // |============================
+    // | Завантаження звичайного фонового зображення для десктопної версії
+    // |============================
+  @include mq(desktop) {
+    background-image: url(../images/background-images/background-hero-blackout_lg.png),
+    url(../images/background-images/background-hero_lg.jpg);
+
+    background-image: -webkit-image-set(url(../images/background-images/background-hero-blackout_lg.webp) 1x),
+    -webkit-image-set(url(../images/background-images/background-hero_lg.webp) 1x);
+
+    // Завантаження ретінізованого 2х фонового зображення
     @include mq(retina) {
       background-image: url(../images/background-images/background-hero-blackout_lg@2x.png),
-        url(../images/background-images/background-hero_lg@2x.png);
+      url(../images/background-images/background-hero_lg@2x.jpg);
+  
+      background-image: -webkit-image-set(url(../images/background-images/background-hero-blackout_lg@2x.webp) 1x),
+      -webkit-image-set(url(../images/background-images/background-hero_lg@2x.webp) 1x);
     }
   }
 }
+
+
+ 
 
 .hero .container {
   display: block;

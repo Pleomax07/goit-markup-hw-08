@@ -6,11 +6,12 @@
 }
 
 .clients__item {
+  height: 92px;
+
   @include mq(mobile-only) {
     flex-basis: calc((100% - 30px) / 2);
   }
-  
-  
+
   @include mq(tablet-only) {
     flex-basis: calc((100% - 60px) / 3);
   }

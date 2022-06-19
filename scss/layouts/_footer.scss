@@ -39,10 +39,6 @@
 }
 
 .address-group {
-  @include mq(mobile-only) {
-    margin-bottom: 60px;
-  }
-
   @include mq(tablet-only) {
     text-align: center;
   }
@@ -68,7 +64,9 @@
 
   @include mq(mobile-only) {
     align-items: center;
-  margin-right: 0;
+    margin-right: 0;
+    margin-bottom: 60px;
+    
   }
 
   @include mq(tablet-only) {
@@ -76,7 +74,7 @@
     align-items: center;
     flex-direction: column;
     margin-right: 0;
-    margin-bottom: 60px;
+    
   }
 }
 
