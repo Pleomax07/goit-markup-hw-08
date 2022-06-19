@@ -1214,24 +1214,24 @@ ul {
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../images/background-images/background-hero-blackout_sm.png), url(../images/background-images/background-hero_sm.jpg);
+  background-image: url(../images/background-images/background-hero-blackout_sm.png), url(../images/background-images/background-hero_sm.png);
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/background-images/background-hero-blackout_sm@2x.png), url(../images/background-images/background-hero_sm@2x.jpg);
+    background-image: url(../images/background-images/background-hero-blackout_sm@2x.png), url(../images/background-images/background-hero_sm@2x.png);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero {
-    background-image: url(../images/background-images/background-hero-blackout_md.png), url(../images/background-images/background-hero_md.jpg);
+    background-image: url(../images/background-images/background-hero-blackout_md.png), url(../images/background-images/background-hero_md.png);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/background-images/background-hero-blackout_md@2x.png), url(../images/background-images/background-hero_md@2x.jpg);
+    background-image: url(../images/background-images/background-hero-blackout_md@2x.png), url(../images/background-images/background-hero_md@2x.png);
   }
 }
 
@@ -1239,13 +1239,13 @@ ul {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../images/background-images/background-hero-blackout_lg.png), url(../images/background-images/background-hero_lg.jpg);
+    background-image: url(../images/background-images/background-hero-blackout_lg.png), url(../images/background-images/background-hero_lg.png);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/background-images/background-hero-blackout_lg@2x.png), url(../images/background-images/background-hero_lg@2x.jpg);
+    background-image: url(../images/background-images/background-hero-blackout_lg@2x.png), url(../images/background-images/background-hero_lg@2x.png);
   }
 }
 

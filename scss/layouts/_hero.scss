@@ -10,31 +10,31 @@
   background-repeat: no-repeat;
 
   background-image: url(../images/background-images/background-hero-blackout_sm.png),
-    url(../images/background-images/background-hero_sm.jpg);
+    url(../images/background-images/background-hero_sm.png);
 
   @include mq(retina) {
     background-image: url(../images/background-images/background-hero-blackout_sm@2x.png),
-      url(../images/background-images/background-hero_sm@2x.jpg);
+      url(../images/background-images/background-hero_sm@2x.png);
   }
 
   @include mq(tablet-only) {
     background-image: url(../images/background-images/background-hero-blackout_md.png),
-      url(../images/background-images/background-hero_md.jpg);
+      url(../images/background-images/background-hero_md.png);
 
     @include mq(retina) {
       background-image: url(../images/background-images/background-hero-blackout_md@2x.png),
-        url(../images/background-images/background-hero_md@2x.jpg);
+        url(../images/background-images/background-hero_md@2x.png);
     }
   }
   @include mq(desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: url(../images/background-images/background-hero-blackout_lg.png),
-      url(../images/background-images/background-hero_lg.jpg);
+      url(../images/background-images/background-hero_lg.png);
 
     @include mq(retina) {
       background-image: url(../images/background-images/background-hero-blackout_lg@2x.png),
-        url(../images/background-images/background-hero_lg@2x.jpg);
+        url(../images/background-images/background-hero_lg@2x.png);
     }
   }
 }
